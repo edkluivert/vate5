@@ -20,14 +20,14 @@ class AppColor {
 
   static Color redDispute = const Color(0xFFFF3B30);
 
-  static Color shippedPurple = const Color(0xFF9B51E0);
+  static Color tranCardColor = const Color(0xFF192259);
 
   static Color redLogOut = const Color(0xFFFFE7E0);
 
 
   static Color darkGreen = const Color(0xFF4CD964);
 
-  static Color greenPale = const Color(0xFF6FCF97);
+  static Color greenPale = const Color(0xFF1DC7AC);
 
   static Color successGreen = const Color(0xFFE9FFF3);
 
