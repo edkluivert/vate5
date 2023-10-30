@@ -15,6 +15,6 @@ class AppConstants{
 
   static const addBeneficiaryPath = 'user/addBeneficiary';
 
-  static const loginPath = '/login/';
+  static const userProfilePath = 'user/profile';
 
   }
