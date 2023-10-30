@@ -20,6 +20,8 @@ class AppColor {
 
   static Color redDispute = const Color(0xFFFF3B30);
 
+  static Color lightGrey = const Color(0xFFFAFAFA);
+
   static Color tranCardColor = const Color(0xFF192259);
 
   static Color redLogOut = const Color(0xFFFFE7E0);

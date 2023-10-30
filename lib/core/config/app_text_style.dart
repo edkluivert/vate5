@@ -41,7 +41,7 @@ class AppTextStyle {
 
   );
 
-  /// username
+  /// username, add and remove
   TextStyle headlineMedium = TextStyle(
     color: AppColor.secondaryColor,
     fontSize: 20,

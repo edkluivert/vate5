@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822041022692",
+    "project_id": "vate5-62055",
+    "storage_bucket": "vate5-62055.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822041022692:android:30b30c00b627c665995cf1",
+        "android_client_info": {
+          "package_name": "com.innovative5.vate5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH2nqUa3evCRO59HFkzUfdDOcpt7indhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
