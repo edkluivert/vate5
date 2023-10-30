@@ -46,6 +46,13 @@ dependencies:
   fluttertoast: ^8.2.1
   device_preview: ^1.1.0
 
+
+  #firebase
+  #firebase_core: ^2.15.1
+  #firebase_app_check: ^0.1.5+2
+  #cloud_firestore: ^4.9.0
+  #firebase_analytics: ^10.4.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

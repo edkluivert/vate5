@@ -18,11 +18,16 @@ class SearchScreen extends StatelessWidget {
            child: Column(
              crossAxisAlignment: CrossAxisAlignment.start,
              children: [
-               CustomTextField(),
+               CustomTextField(
+                 allowPrefixIcon: true,
+                 hint: 'Add beneficiary',
+               ),
               SizedBox(
+                height: size.height/4,
                 child: ListView.builder(
                   shrinkWrap: true,
                  physics: BouncingScrollPhysics(),
+                 itemCount: 10,
                  itemBuilder: (context, index){
                    return BeneficiaryCard();
                  },
@@ -35,6 +40,7 @@ class SearchScreen extends StatelessWidget {
                  child: ListView.builder(
                    shrinkWrap: true,
                    physics: BouncingScrollPhysics(),
+                   itemCount: 10,
                    itemBuilder: (context, index){
                      return BeneficiaryCard();
                    },

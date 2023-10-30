@@ -1,16 +1,12 @@
 
-
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-
 import '../../data/cache/cache_manager.dart';
 
 
 
 class DeviceManager extends GetxController with CacheManager{
-
-
 
 
 
@@ -26,8 +22,6 @@ class DeviceManager extends GetxController with CacheManager{
       print(getAccessToken().toString());
 
     }
-
-
 
   }
 
@@ -104,8 +98,6 @@ class DeviceManager extends GetxController with CacheManager{
   //
   //
   // }
-
-
 
 
 }

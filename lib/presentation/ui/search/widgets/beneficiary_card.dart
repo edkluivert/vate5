@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:touch_ripple_effect/touch_ripple_effect.dart';
 import 'package:vate5/core/config/app_color.dart';
 
+import 'add_sheet.dart';
+
 class BeneficiaryCard extends StatelessWidget {
   const BeneficiaryCard({super.key});
 
@@ -28,20 +30,20 @@ class BeneficiaryCard extends StatelessWidget {
 
              const Spacer(),
              TouchRippleEffect(
+               rippleColor: AppColor.secondaryColor.withOpacity(0.10),
+               rippleDuration: const Duration(milliseconds: 70),
                onTap: (){
-                 Future.delayed(const Duration(seconds: 1)).then((value){
-                   showModalBottomSheet(context: context,
-                       isDismissible: false,
-                       //isScrollControlled: true,
-                       shape: const RoundedRectangleBorder(
-                           borderRadius: BorderRadius.only(
-                               topLeft: Radius.circular(8),
-                               topRight: Radius.circular(8)
-                           )
-                       ),
-                       builder: (context)=>  SingleChildScrollView(child: Container())
-                   );
-                 });
+                 showModalBottomSheet(context: context,
+                     isDismissible: false,
+                     //isScrollControlled: true,
+                     shape: const RoundedRectangleBorder(
+                         borderRadius: BorderRadius.only(
+                             topLeft: Radius.circular(8),
+                             topRight: Radius.circular(8)
+                         )
+                     ),
+                     builder: (context)=>  SingleChildScrollView(child: AddSheet())
+                 );
                },
                child: Container(
                  width: 80,
@@ -51,9 +53,11 @@ class BeneficiaryCard extends StatelessWidget {
                  ),
                  child: Padding(
                    padding: const EdgeInsets.all(8.0),
-                   child: Text('Add', style: theme.textTheme.headlineMedium!.copyWith(
-                     fontSize: 12, color: Colors.white
-                   ),),
+                   child: Center(
+                     child: Text('Add', style: theme.textTheme.headlineMedium!.copyWith(
+                       fontSize: 12, color: Colors.white
+                     ),),
+                   ),
                  ),
                ),
              )

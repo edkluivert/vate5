@@ -7,11 +7,13 @@ class AppConstants{
   // connectTimeout
   static const int connectionTimeout = 10000;
 
-  static const createAccountPath = '/user';
+  static const createAccountPath = 'auth/signup';
 
-  static const verifyEmailPath = '/verify-email/';
+  static const loginAccountPath = 'auth/login';
 
-  static const otpConfirmationPath = '/confirm-otp/';
+  static const fundAccountPath = 'user/fundAcct';
+
+  static const addBeneficiaryPath = 'user/addBeneficiary';
 
   static const loginPath = '/login/';
 

@@ -12,7 +12,7 @@ import 'core/di/app_binding.dart';
 import 'core/routes/app_pages.dart';
 import 'core/routes/app_routes.dart';
 
-void main() async{
+Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
   runApp(const MyApp());
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeService().theme,
       getPages: AppPages.list,
       initialBinding: AppBinding(),
-      initialRoute: AppRoutes.bottomNav,
+      initialRoute: AppRoutes.splash,
       scrollBehavior: MyScrollBehavior(),
       // useInheritedMediaQuery: true,
       // locale: DevicePreview.locale(context),
